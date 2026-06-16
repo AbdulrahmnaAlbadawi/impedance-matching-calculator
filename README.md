@@ -1,8 +1,6 @@
 # Smith Chart & Impedance Matching Calculator — MATLAB
 
-A self-contained MATLAB toolkit for RF engineers learning impedance matching.
-
-![Smith Chart](docs/smith_chart_preview.png)
+A self-contained MATLAB toolkit for RF impedance matching visualization and design.
 
 ## What's Inside
 
@@ -15,6 +13,30 @@ A self-contained MATLAB toolkit for RF engineers learning impedance matching.
 | `examples/ex_matching.m` | L-network matching: 100−j30 Ω → 50 Ω @ 2.4 GHz |
 | `examples/ex_sweep.m` | Frequency-sweep spiral (RLC antenna model, 1–4 GHz) |
 | `examples/ex_stub.m` | Shunt-stub matching with physical microstrip lengths |
+
+---
+
+## Examples
+
+### Example 1: Basic Impedance Points
+Plot multiple impedances on the Smith chart:
+
+![Basic Smith Chart](docs/ex_basic.png)
+
+### Example 2: L-Network Matching
+Impedance matching from 100−j30 Ω to 50 Ω:
+
+![L-Network Matching](docs/ex_matching.png)
+
+### Example 3: Frequency Sweep
+RLC antenna impedance trace across 1–4 GHz:
+
+![Frequency Sweep](docs/ex_sweep.png)
+
+### Example 4: Shunt-Stub Matching
+Single shunt-stub matching at 2.4 GHz:
+
+![Shunt-Stub Matching](docs/ex_stub.png)
 
 ---
 
@@ -60,7 +82,7 @@ reflection coefficient:
 ### L-Network Matching
 
 An L-network places **two reactive elements** (one shunt, one series)
-to transform an arbitrary Z_L to Z₀.  There are always two solutions
+to transform an arbitrary Z_L to Z₀. There are always two solutions
 (high-pass and low-pass topology).
 
 The network Q is:
@@ -124,28 +146,12 @@ plotSmithChart( ...
 
 ## Requirements
 
-- **MATLAB R2019b or later** (uses `inputParser`, `arguments` syntax optional)
+- **MATLAB R2019b or later** (uses `inputParser`)
 - No toolboxes required for core functions
-- The RF Toolbox and Antenna Toolbox (Stage 2–3 of your roadmap) unlock
-  `.s2p` import, circuit-envelope simulation, and full antenna modelling
-
----
-
-## Roadmap Context
-
-This project is the portfolio deliverable for **Stage 1 — Topic 1 (MATLAB Basics)**
-of the RF Design + PCB Skills roadmap.
-
-Next steps in the roadmap:
-- **Topic 3 (EM for RF):** Write a Smith-chart matching walkthrough that validates
-  these L-network solutions analytically
-- **Topic 4 (Transmission Lines):** Load a `.s2p` Touchstone file and plot S₁₁ on
-  this same Smith chart
-- **Topic 8 (Antenna Simulation):** Feed Antenna Toolbox impedance data directly
-  into `plotSmithChart` to visualise your designed antenna
+- Optional: RF Toolbox and Antenna Toolbox for advanced features
 
 ---
 
 ## License
 
-MIT — see [LICENSE](LICENSE)
+MIT
