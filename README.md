@@ -125,28 +125,7 @@ plotSmithChart( ...
     'LineColor',   [0.2 0.4 0.9])     % RGB colour for sweep line
 ```
 
----
 
-## matchImpedance Output
-══════════════════════════════════════════
-Impedance Matching Calculator
-══════════════════════════════════════════
-ZL      = 100.00 -30.00 j  Ω
-Z0      = 50.00 Ω
-Freq    = 2.4 GHz
-|Γ_L|   = 0.3922  (8.13 dB RL)
-VSWR_L  = 2.291
-──────────────────────────────────────────
-Solution 1 — L-net (shunt-at-load), Q=1.000, sgn=+1
-L_series = 4.320 nH
-C_shunt  = 0.854 pF
-|Γ_in|  = 3.24e-10  (matched)
-Solution 2 — L-net (shunt-at-load), Q=1.000, sgn=-1
-C_series = 2.120 pF
-L_shunt  = 13.26 nH
-|Γ_in|  = 2.81e-10  (matched)
-
----
 
 ## Requirements
 
