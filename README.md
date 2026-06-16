@@ -29,9 +29,17 @@ Impedance matching from 100−j30 Ω to 50 Ω:
 ![L-Network Matching](docs/ex_matching.png)
 
 ### Example 3: Frequency Sweep
-RLC antenna impedance trace across 1–4 GHz:
 
-![Frequency Sweep](docs/ex_sweep.png)
+RLC antenna impedance trace across 1–4 GHz (Smith chart):
+
+![Frequency Sweep Smith Chart](docs/ex_sweep.png)
+
+VSWR and Return Loss vs frequency for the same RLC antenna model.
+The antenna resonates at 2.40 GHz where VSWR reaches its minimum and
+return loss peaks at ~42 dB, indicating near-perfect matching.
+The −10 dB bandwidth (VSWR < 2) spans roughly 200 MHz around resonance:
+
+![VSWR and Return Loss](docs/ex_stub.png)
 
 ### Example 4: Shunt-Stub Matching
 Single shunt-stub matching at 2.4 GHz:
