@@ -36,7 +36,7 @@ RLC antenna impedance trace across 1–4 GHz:
 ### Example 4: Shunt-Stub Matching
 Single shunt-stub matching at 2.4 GHz:
 
-![Shunt-Stub Matching](docs/ex_stub.png)
+![Shunt-Stub Matching](docs/ex_sweep0.png)
 
 ---
 
